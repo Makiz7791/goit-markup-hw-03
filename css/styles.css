@@ -8,7 +8,6 @@
   --black-background-color: #2f303a;
   --gray-background-color: #f5f4fa;
 }
-
 body {
   background-color: var(--text-white-color);
   color: var(---paragraph-text-color);
@@ -21,25 +20,46 @@ body {
   padding: 0 15px;
 }
 /* HEADER STYLES */
-
 .header {
-  background: VAR(--white-color);
-  color: VAR(--black-color);
+  background: var(--white-color);
+  color: var(--black-color);
+  border-bottom: 1px solid #e5e5e5;
 }
-.div {
+.header .container {
   display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
-.container {
-  display: flex;
-}
+/* .container {
+  display: block;
+} */
 .nav {
   display: flex;
 }
 .nav-item {
   display: flex;
 }
+.nav-item .item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts-list a,
+.nav-item a {
+  color: var(--paragraph-text-color);
+}
+.contacts-list a:hover,
+.nav-item a:hover {
+  color: var(--accent-text-color);
+}
 .contacts-list {
   display: flex;
+  margin-left: auto;
+}
+.contacts-list li:not(:last-child) {
+  margin-right: 50px;
+}
+ul {
+  list-style: none;
 }
 /*CONTACTTS section*/
 .contacts-section {
@@ -53,6 +73,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  margin-right: 93px;
 }
 .logofirst {
   color: var(--accent-text-color);
@@ -68,12 +89,11 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-
 .link-nav a:hover,
 .link-nav a:focus {
   color: var(--accent-text-color);
 }
-.link-nav .link-current {
+.nav-item .active {
   color: var(--accent-text-color);
 }
 .contacts a {
@@ -95,6 +115,11 @@ body {
   letter-spacing: 0.06em;
   text-decoration: none;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 .button-second {
   background-color: var(--gray-background-color);
@@ -123,16 +148,19 @@ body {
   color: var(--text-white-color);
 }
 .hero .container {
-  padding-left: 452px;
+  padding-left: 252px;
+  padding-right: 252px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
-  font-weight: 1600px;
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 44px;
-  line-height: 1.36px;
-  margin-top: 200px;
-  margin-bottom: 280px;
+  line-height: 1.36;
+  /* margin-top: 200px;
+  margin-bottom: 280px; */
+  margin-bottom: 40px;
   text-transform: uppercase;
 
   text-align: center;
