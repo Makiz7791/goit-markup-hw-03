@@ -19,6 +19,11 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+.title {
+  font-size: 1.167;
+  text-align: center;
+  font-size: 36px;
+}
 /* HEADER STYLES */
 .header {
   background: var(--white-color);
@@ -153,7 +158,6 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
 .hero-title {
   font-weight: 600;
   font-size: 44px;
@@ -162,34 +166,68 @@ ul {
   margin-bottom: 280px; */
   margin-bottom: 40px;
   text-transform: uppercase;
-
   text-align: center;
   letter-spacing: 0.06em;
 }
-.section-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17x;
-  text-align: center;
+.about .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.section-title.middle {
-  color: var(--title-text-color);
+.about-list {
+  display: flex;
+}
+.about-list li {
+  width: 270px;
+}
+.about-list li:not(:last-child) {
+  margin-right: 30px;
+}
+.about-list h3 {
+  padding-bottom: 10px;
+}
+.about-list p {
+  line-height: 1.714;
   font-size: 14px;
-  line-height: 1.14px;
-  text-align: left;
-  text-transform: uppercase;
+  letter-spacing: 3%;
 }
-.title.middle {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: left;
+.features .container {
+  padding-bottom: 94px;
 }
-
-.section.gray {
+.features-list {
+  display: flex;
+  margin-top: 50px;
+}
+.features-list li {
+  width: 370px;
+}
+.features-list li:not(:last-child) {
+  margin-right: 30px;
+}
+.team {
   background-color: var(--gray-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-list {
+  display: flex;
+  margin-top: 50px;
+}
+.team-list li {
+  width: 270px;
+  text-align: center;
+  padding-bottom: 30px;
+  background: #ffffff;
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.team-list li:not(:last-child) {
+  margin-right: 30px;
 }
 .visually-hidden {
   position: absolute !important;
@@ -236,12 +274,23 @@ ul {
   color: var(--accent-text-color);
 }
 .footer {
-  background-color: var(--darc-background-color);
+  background-color: var(--black-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
-body {
-  background-color: var(--text-white-color);
-  color: var(---paragraph-text-color);
-  font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
+.footer .logo {
+  margin-bottom: 20px;
+  display: block;
+}
+.address-list li {
+  margin-top: 9px;
+}
+.address {
+  font-style: normal;
+}
+.address p {
+  color: var(--text-white-color);
+}
+.address-link {
+  color: var(--contacts-text-color);
 }
