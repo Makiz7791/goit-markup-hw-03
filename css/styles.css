@@ -129,7 +129,7 @@ ul {
   padding: 10px 32px;
 }
 .button-second:hover,
-.button-second {
+.button-second:focus {
   background-color: var(--gray-background-color);
   color: var(--title-text-color);
   font-family: inherit;
@@ -168,7 +168,6 @@ ul {
   /* margin-top: 200px;
   margin-bottom: 280px; */
   margin-bottom: 40px;
-  text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.06em;
 }
@@ -187,6 +186,8 @@ ul {
 }
 .about-list h3 {
   padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 .about-list p {
   line-height: 1.714;
