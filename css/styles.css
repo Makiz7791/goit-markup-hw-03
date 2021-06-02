@@ -44,6 +44,8 @@ body {
 }
 .nav-item {
   display: flex;
+  font-size: 15px;
+  font-weight: 500;
 }
 .nav-item .item:not(:last-child) {
   margin-right: 50px;
@@ -126,6 +128,7 @@ ul {
   border-radius: 4px;
   padding: 10px 32px;
 }
+.button-second:hover,
 .button-second {
   background-color: var(--gray-background-color);
   color: var(--title-text-color);
@@ -238,6 +241,7 @@ ul {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+  text-transform: uppercase;
 }
 .portfolio {
   background-color: var(--white-background-color);
@@ -248,8 +252,6 @@ ul {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-}
-.batl-rtr li {
 }
 .batl-rtr li:not(:last-child) {
   margin-right: 8px;
